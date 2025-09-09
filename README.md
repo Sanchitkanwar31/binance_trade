@@ -2,7 +2,7 @@
 
 A modular Python trading bot for Binance Futures & Spot markets. Supports **market, limit, and stop-limit orders**, with clean logging, extendable strategies, and a CLI interface.
 
-> ⚠️ *This project is for educational purposes only. Trading involves risk — use at your own discretion.*
+
 
 ---
 
