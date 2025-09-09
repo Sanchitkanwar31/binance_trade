@@ -1,0 +1,41 @@
+2025-09-09 19:24:02,978 - INFO - Bot started
+2025-09-09 19:25:00,994 - INFO - Placing LIMIT order: SELL 2.0 ETHUSDT @ 113344.1
+2025-09-09 19:25:02,115 - ERROR - Error while placing order: APIError(code=-2019): Margin is insufficient.
+Traceback (most recent call last):
+  File "d:\dell\Html project\trade_b\binance_bot\src\main.py", line 57, in place_order
+    resp = place_limit_order(symbol, side, qty, price)
+  File "d:\dell\Html project\trade_b\binance_bot\src\limit_order.py", line 16, in place_limit_order
+    resp = client.futures_create_order(
+        symbol=symbol.upper(),
+    ...<4 lines>...
+        timeInForce="GTC"
+    )
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2019): Margin is insufficient.
+2025-09-09 19:28:51,109 - WARNING - Invalid menu choice: python -u "d:\dell\Html project\trade_b\binance_bot\src\main.py"
+2025-09-09 19:28:51,327 - WARNING - Invalid menu choice: python -u "d:\dell\Html project\trade_b\binance_bot\src\main.py"
+2025-09-09 19:28:56,984 - INFO - Bot stopped by user
+2025-09-09 19:29:31,393 - INFO - Bot started
+2025-09-09 19:34:43,401 - INFO - Bot started
+2025-09-09 19:35:50,212 - INFO - Bot started
+2025-09-09 19:36:25,862 - INFO - Placing MARKET order: SELL 1.0 BTCUSDT @ MARKET
+2025-09-09 19:36:26,424 - INFO -  Order executed successfully: {'orderId': 5643912227, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ7e9d67347e69611da61dda', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.999', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1757426786243}
+2025-09-09 19:37:16,602 - INFO - Bot stopped by user
+2025-09-09 19:46:49,215 - INFO - Bot started
+2025-09-09 19:47:21,115 - INFO - Placing STOP_LIMIT order: SELL 1.0 BTCUSDT
+2025-09-09 19:51:29,261 - INFO - Placing MARKET order: BUT 1.0 	USDT
+2025-09-09 19:52:03,372 - INFO - Bot stopped by user
+2025-09-09 19:52:57,859 - INFO - Bot started
+2025-09-09 19:53:21,757 - INFO - Placing MARKET order: SELL 1.0 BTCUSDT
+2025-09-09 19:53:22,329 - INFO -  Market Order placed: {'orderId': 5643953624, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJbdbd0787b801ea3b00ef32', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.000', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1757427802162}
+2025-09-09 19:53:22,330 - INFO -  Order executed: {'orderId': 5643953624, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJbdbd0787b801ea3b00ef32', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.000', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1757427802162}
